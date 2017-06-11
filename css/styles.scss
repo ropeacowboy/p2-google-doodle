@@ -17,6 +17,7 @@ body {
 #stage{
     position:relative;
     overflow:hidden;
+    z-index: 1; 
 }
 
 //Child
@@ -45,7 +46,13 @@ body {
 //Last Frame
 
 #stage:hover h1,
-#stage:hover svg{
+#stage svg{
     opacity: 1;
     transition: opacity 2.5s;
+}
+
+#stage h1{
+    position:absolute;
+    z-index: 3; 
+    color:red;
 }
